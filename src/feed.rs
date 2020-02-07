@@ -524,6 +524,11 @@ where
         })
     }
 
+    /// Expose the bitfield attribute to use on during download
+    pub fn bitfield(&self) -> &Bitfield {
+        &self.bitfield
+    }
+
     /// (unimplemented) Provide a range of data to download.
     pub fn download(&mut self, _range: Range<usize>) -> Result<()> {
         unimplemented!();
