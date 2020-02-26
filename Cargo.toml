@@ -28,18 +28,20 @@ memory-pager = "0.9.0"
 merkle-tree-stream =  { version = "0.11.0", git = "https://github.com/bltavares/merkle-tree-stream", branch = "usize-to-u64" }
 pretty-hash = "0.4.1"
 rand = "0.7.3"
-random-access-disk = { version = "1.0.0", git = "https://github.com/bltavares/random-access-disk", branch = "failure-into-stderr" }
-random-access-memory = { version = "1.1.0", git = "https://github.com/bltavares/random-access-memory", branch = "failure-into-stderr" }
-random-access-storage = "3.0.0"
+random-access-disk = { version = "1.0.0", git = "https://github.com/bltavares/random-access-disk", branch = "async-trait" }
+random-access-memory = { version = "1.1.0", git = "https://github.com/bltavares/random-access-memory", branch = "async-trait" }
+random-access-storage = {version = "3.0.0", git = "https://github.com/bltavares/random-access-storage", branch = "async-trait" }
 sha2 = "0.8.1"
 sleep-parser = "0.8.0"
 sparse-bitfield = "0.11.0"
 tree-index = { version = "0.5.0", git = "https://github.com/bltavares/tree-index", branch = "usize-to-u64" }
 bitfield-rle = "0.1.1"
+futures = "0.3.4"
+async-std = "1.5.0"
 
 [dev-dependencies]
 quickcheck = "0.9.2"
 data-encoding = "2.2.0"
 remove_dir_all = "0.5.2"
 tempfile = "3.1.0"
-async-std = "1.5.0"
+async-std = { version = "1.5.0", features = ["attributes"] }
